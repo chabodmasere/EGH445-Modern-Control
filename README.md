@@ -1,4 +1,4 @@
-# EGH445 Project Repository
+# EGH445 Project Repository (High Distinction)
 
 This repository contains the complete project artefacts for **EGH445**, including the source code, final report, and demonstration materials.
 
