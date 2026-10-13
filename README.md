@@ -81,8 +81,8 @@ run_all     % designs the controller and observer, simulates, plots and animates
 | `make_figures.m` | Produce every figure in `PVTOL_Figures/` (called by `main.m`) |
 | `Animate_VTOL.m` | Animate the flight (called by `main.m`) |
 | `lqr_sensitivity.m` | Sweep the LQR input penalty `R` |
-| `test1.m` | Sweep the reference prefilter bandwidth |
-| `test2.m` | Sweep initial offset and pitch to map the operating envelope |
+| `prefilter_bandwidth_sensitivity.m` | Sweep the reference prefilter bandwidth |
+| `operating_envelope_sweep.m` | Sweep initial offset and pitch to map the operating envelope |
 
 `System_Simulator.p` and `VTOL_Dynamics.p` are the black-box simulator files supplied by the unit.
 
@@ -99,7 +99,9 @@ Code/
 ├── VTOL_Dynamics_corrected.m    nonlinear plant model
 ├── make_figures.m               all plots
 ├── Animate_VTOL.m               animation
-├── lqr_sensitivity.m, test1.m, test2.m    sensitivity studies
+├── lqr_sensitivity.m            sweep of the LQR input penalty
+├── prefilter_bandwidth_sensitivity.m    sweep of the prefilter bandwidth
+├── operating_envelope_sweep.m   sweep of initial offset and pitch
 ├── designValues.mat             saved gains and model matrices
 └── PVTOL_Figures/               figures used in the report
 Report.pdf                       final report
